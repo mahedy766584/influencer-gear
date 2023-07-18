@@ -185,13 +185,77 @@ nav > h3{
     font-weight: 500;
     letter-spacing: 0.252px;
 }
-
-
-
-
-.hide{
-    display: none;
+.see-more{
+    left: 280%;
+    top: 20px;
+    position: relative;
 }
+.see-more > a{
+    text-decoration: none;
+    color: var(--button-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Featured products at one place section  */
+.featured-product{
+    display: flex;
+    max-width: 75%;
+    margin: 20px auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.featured-text{
+    width: 50%;
+}
+.featured-text > h1{
+    font-size: 2.6rem;
+    color: var(--first-color);
+}
+.featured-text > p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 20px;
+}
+.featured-text > .banner-button{
+    border-radius: 0;
+}
+
+/* footer section style */
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color: #0A0826;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+footer > h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+footer .copy{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.social-icons{
+    margin-top: 15px;
+}
+.social-icons > a{
+    color: #ffffff;
+}
+.fa-brands:not(fa-facebook){
+    margin-left: 15px;
+}
+
+
+
 
 
 
@@ -260,4 +324,8 @@ nav > h3{
         justify-content: center;
         gap: 20px;
     }
+    .see-more{
+        left: 0%;
+    }
+    
 }

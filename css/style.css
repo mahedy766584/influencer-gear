@@ -28,16 +28,30 @@ nav > h3{
     font-size: 26px;
     color: var(--first-color);
 }
-nav > ul{
+
+/* design of checkbtn for responsive */
+.checkbtn{
+    display: none;
+    font-size: 30px;
+}
+#check{
+    display: none;
+}
+/* ------------ */
+
+.navbar{
+    display: flex;
+}
+.navbar > ul{
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
 }
-nav > ul > li{
+.navbar > ul > li{
     margin-right: 25px;
 }
-nav > ul > li > a{
+.navbar > ul > li > a{
     text-decoration: 0;
     color: black;
     font-weight: 500;
@@ -105,4 +119,66 @@ nav > ul > li > a{
 }
 .secondary-image{
     position: absolute;
+}
+
+
+
+
+
+
+
+
+.hide{
+    display: none;
+}
+
+
+
+
+/* @ query for Mobile Device */
+@media screen and (max-width: 576px){
+    header > nav > h3{
+        font-size: 20px;
+    }
+    header .navbar > ul{
+        position: fixed;
+        width: 100%;
+        background-color: #bebebe;
+        top: 90px;
+        flex-direction: column;
+        left: -200%;
+        transition: all .1s;
+        z-index: 1;
+    }
+    header .navbar ul li{
+        line-height: 20px;
+        clear: both;
+        margin-top: 15px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .checkbtn{
+        display: block;
+    }
+
+
+    /* banner of header responsive */
+    .banner-of-header{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .banner-image > img{
+        width: 100%;
+    }
+    .secondary-image > img{
+        width: 100%;
+    }
+    .banner-text{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 30px;
+    }
 }

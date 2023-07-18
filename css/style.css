@@ -327,5 +327,16 @@ footer .copy{
     .see-more{
         left: 0%;
     }
-    
+    /* featured product responsive */
+    .featured-product{
+        flex-direction: column;
+    }
+    .featured-image > img{
+        width: 100%;
+    }
+    .featured-text {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
 }

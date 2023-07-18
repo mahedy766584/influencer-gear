@@ -329,14 +329,14 @@ footer .copy{
     }
     /* featured product responsive */
     .featured-product{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .featured-image > img{
         width: 100%;
+        margin-top: 20px;
     }
     .featured-text {
         width: 100%;
         text-align: center;
-        margin-top: 20px;
     }
 }

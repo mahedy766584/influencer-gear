@@ -121,6 +121,13 @@ nav > h3{
     position: absolute;
 }
 
+/* sponsors logo style */
+.sponsors-logo{
+    max-width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto;
+}
 
 
 
@@ -180,5 +187,16 @@ nav > h3{
     }
     .banner-title{
         font-size: 30px;
+    }
+
+    /* sponsor section responsive */
+    .sponsors-logo{
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        margin: 50px auto;
+    }
+    .sponsors-logo img{
+        width: 50px;
     }
 }
